@@ -1,0 +1,15 @@
+.base{
+    border: 3px solid green;
+    margin: 20px auto;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+}
