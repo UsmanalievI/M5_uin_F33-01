@@ -31,27 +31,9 @@ export function deleteUsersAction(){
         type: types.DELETE
     }
 }
-export function plus(equally){
+export function resultCalculator(ravno){
     return{
         type: types.PLUS,
-        payload: equally
-    }
-}
-export function minus(equally){
-    return{
-        type: types.MINUS,
-        payload: equally
-    }
-}
-export function delenie(equally){
-    return{
-        type: types.DELENIE,
-        payload: equally
-    }
-}
-export function umnojenie(equally){
-    return{
-        type: types.UMNOJENIE,
-        payload: equally
+        payload: ravno
     }
 }

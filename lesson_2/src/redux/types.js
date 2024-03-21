@@ -4,8 +4,5 @@ export const types={
     withParams: 'withParams',
     VALUE: 'VALUE',
     DELETE: 'DELETE',
-    PLUS: 'PLUS',
-    MINUS:'MINUS',
-    DELENIE:'DELENIE',
-    UMNOJENIE:'UMNOJENIE'
+    PLUS: 'PLUS'
 }
