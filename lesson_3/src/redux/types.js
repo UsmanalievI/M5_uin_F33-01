@@ -1,3 +1,4 @@
 export const types={
-    USERS: 'USERS'
+    USERS: 'USERS',
+    USER: 'USER'
 }
