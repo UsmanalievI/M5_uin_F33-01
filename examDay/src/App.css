@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.largeContainer,
+.midContainer,
+.smallContainer{
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.largeContainer{
+  max-width: 1240px;
+}
+.midContainer{
+  max-width: 1044px;
+}
+.smallContainer{
+  max-width: 926px;
+}
+.primaryButton,
+.outlineButton,
+.deleteButton{
+  overflow: hidden;
+  padding: 12px 32px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 160%;
+  border: 2px solid blue;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: .2s ease;
+}
+.primaryButton,
+.outlineButton,
+.deleteButton:focus{
+  opacity: .9;
+}
+.deleteButton{
+  background-color: #ffe8e8;
+  border: 1px solid #f41414;
+  color: #f41414;
+}
+.deleteButton:hover{
+  background-color: #f41414;
+  color: #fff;
+}
+.primaryButton{
+  color: white;
+  background-color: blue;
+}
+.primaryButton:hover{
+  background-color: #fff;
+  color: black;
+}
+.outlineButton{
+  color: black;
+  background-color: white;
+  
+  .disabled:hover,
+  .disabled:focus{
+    color: grey;
+    background-color: #fff;
+    border: 2px solid grey;
+  }
+}
+.outlineButton:hover{
+  color: white;
+  background-color: blue;
+}
+.disabled{
+  opacity: .7 !important;
+  color: grey;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
