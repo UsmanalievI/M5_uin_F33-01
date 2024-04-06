@@ -2,13 +2,13 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getPosts=createAsyncThunk(
     'getPosts',
-    async function (info, {dispatch}){
+    async function (user, {dispatch}){
         const options={
             method: "POST",
             headers:{
                 "Content-Type": 'application/json'
             },
-            body: JSON.stringify(info)
+            body: JSON.stringify(user)
         }
         const response=await fetch('https://jsonplaceholder.typicode.com/posts', options)
         const data= await response.json()

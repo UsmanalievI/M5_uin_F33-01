@@ -23,18 +23,23 @@ function MainPage() {
     }
     
     const addUser=()=>{
-        if(regExp.test(user.email) ||user.password===user.repeatPassword){
-            dispatch(getPosts(user))
-        }else{
-            alert('введенные данные неправильны, перевроверьте')
+        if(!regExp.test(user.email)){
+            alert('g-mail не соотвествует')
+            return
+        }if(!user.email || !user.password || !user.repeatPassword){
+            alert('заполните все поля')
+            return
+        }if(user.password!==user.repeatPassword){
+            alert('пароли не совпадают')
         }
+        dispatch(getPosts(user))
     }
 
   return (
     <Container variant='small'>
         <div style={{display: 'flex', justifyContent:'space-between', margin:'30px auto'}}>
             <input
-                name='E-Mail'
+                name='email'
                 label='Enter g-Mail'
                 placeholder='g-Mail'
                 onChange={changeInput}
