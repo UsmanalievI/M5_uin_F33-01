@@ -29,8 +29,6 @@ function MainPage() {
             alert('введенные данные неправильны, перевроверьте')
         }
     }
-    
-    
 
   return (
     <Container variant='small'>
