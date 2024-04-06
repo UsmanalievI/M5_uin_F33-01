@@ -12,7 +12,7 @@ function Menu() {
                 <Nav className="me-auto">
                     <NavLink to="/" className="me-2">register user</NavLink>
                     <NavLink to="/users">users list</NavLink>
-                    <NavLink to='/albom'>Albom</NavLink>
+                    <NavLink to='/registration'>Registration Page</NavLink>
                 </Nav>
             </Navbar.Collapse>
         </Container>

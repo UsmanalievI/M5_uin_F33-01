@@ -3,5 +3,5 @@ export const types={
     PRELOADER_OFF: "PRELOADER_OFF",
     USERS: 'USERS',
     USER: 'USER',
-    PHOTO: "PHOTO"
+    REGISTR: "REGISTR"
 }

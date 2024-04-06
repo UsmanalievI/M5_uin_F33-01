@@ -54,17 +54,3 @@ export function userInfoAction(id){
         dispatch(getUserInfoAction(data))
     }
 }
-
-function getPhotoAction(photo){
-    return{
-        type: types.PHOTO,
-        payload: photo
-    }
-}
-export function fetchPhotoAction(){
-    return async function (dispatch){
-       const response=await fetch ('https://jsonplaceholder.typicode.com/photos/?limit=10&offset=10') 
-       const data=await response.json()
-       dispatch(getPhotoAction(data))
-    }
-}
